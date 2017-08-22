@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h1>Add a New Movie</h1>
+<hr>
+<!-- Add Movie Form -->
+<form action="{{ url_for('add_movie')}}" method='post'>
+  <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" name="movie_title">
+      <label>Plot</label>
+      <input type="text" class="form-control" name="movie_storyline">
+      <label>Poster Url</label>
+      <input type="text" class="form-control" name="poster_image">
+      <label>YouTube Trailer Url ID</label>
+      <input type="text" class="form-control" name="trailer_youtube" placeholder="(example = zRwy8gtgJ1A&t=1477s)">
+      <br>
+      <input type="submit" class="btn btn-primary" value="Create">
+  </div>
+</form>
+{% endblock %}
