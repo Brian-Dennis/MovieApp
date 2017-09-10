@@ -24,7 +24,7 @@ first go to the directory storing the source code. Inside your terminal, in the 
 ```
 mkdir venv
 virtualenv venv/
-source venv/bin/acitvate (linu/unix)
+source venv/bin/acitvate (linux/unix)
 source venv/scripts/activate (windows)
 ```
 
